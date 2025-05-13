@@ -1,0 +1,13 @@
+{% load static %}
+<!--<!doctype html>-->
+<html>
+<head><title>Fill out our e-form</title></head>
+<body>
+  <h1>User E-Form</h1>
+  <form method="post">
+    {% csrf_token %}
+    {{ form.as_p }}
+    <button type="submit">Submit</button>
+  </form>
+</body>
+</html>
